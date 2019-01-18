@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Character Set -->
+        <meta charset="utf-8">
+
+        <!-- For Older Browsers -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <!-- Browser Tab Title -->
+        <title>Movie Trivia Bonanza!</title>
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" type="image/png" href="assets\images\movieIcon.png">
+        
+        <!-- Search Description -->
+        <meta name="Movie Trivia Bonanza" content="movie trivia game">
+
+        <!-- For Browser Size -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+
+        <!-- Link to CSS files -->
+        <link rel="stylesheet" href="assets\css\style.css">
+        <link rel="stylesheet" href="assets\css\reset.css">
+        
+    </head>
+    <body>
+        <div class="wrapper">
+            <img class="header" src="assets\images\movietriviaheader.png">
+            <div class="maingame">
+                <div id="toprow">
+           
+                    <h2 id="instructions">Guess as many movies as you can before the time runs out!</h2>
+                    <br>
+
+                    <h2 id="timetitle">Time Remaining</h2>
+                    <div id="time"></div>
+                    <br><br>
+
+                    <div>
+                        <input type="submit" value="Start Game" id="startButton">
+                    </div>
+                    <br><br><br>
+
+                </div>
+                <section>
+
+                    <form name="quizForm" onsubmit="return submitAnswers()" id="form">
+
+                        <p class="question">After a space merchant vessel perceives an unknown transmission as a distress call, its landing on the source moon finds one of the crew attacked by a mysterious lifeform, and they soon realize that its life cycle has merely begun.</p>
+                        <br>
+                        <div id="buttons">
+                            <input type="radio" name="q1" value="a" id="q1a">Avatar
+                            <input type="radio" name="q1" value="b" id="q1b">Fantastic Planet
+                            <input type="radio" name="q1" value="c" id="q1c">The Thing
+                            <input type="radio" name="q1" value="d" id="q1d">Alien
+                        </div>
+                        <br><br><br>
+
+                        <p class="question">After the members of a team of scientists lose their cushy positions at a university in New York City, they decide to start their own business to fight the supernatural for money.</p>
+                        <br>
+                        <div id="buttons">
+                            <input type="radio" name="q2" value="a" id="q2a">The Other
+                            <input type="radio" name="q2" value="b" id="q2b">Ghostbusters
+                            <input type="radio" name="q2" value="c" id="q2c">The Haunting
+                            <input type="radio" name="q2" value="d" id="q2d">Poltergeist
+                        </div>
+                        <br><br><br>
+
+                        <p class="question">Los Angeles police officer Brian O'Connor must decide where his loyalty really lies when he becomes enamored with the street racing world he has been sent undercover to destroy.</p>
+                        <br>
+                        <div id="buttons">
+                            <input type="radio" name="q3" value="a" id="q3a">Gone in 60 Seconds
+                            <input type="radio" name="q3" value="b" id="q3b">Cannonball Run
+                            <input type="radio" name="q3" value="c" id="q3c">The Fast and the Furious
+                            <input type="radio" name="q3" value="d" id="q3d">Death Race
+                        </div>
+                        <br><br><br>
+
+                        <p class="question">In 1936, an archaeologist and adventurer is hired by the U.S. government to find an ancient artifact before Adolf Hitler's Nazis can obtain its awesome powers.</p>
+                        <br>
+                        <div id="buttons">
+                            <input type="radio" name="q4" value="a" id="q4a">The Jewel of the Nile
+                            <input type="radio" name="q4" value="b" id="q4b">National Treasure
+                            <input type="radio" name="q4" value="c" id="q4c">Tomb Raider
+                            <input type="radio" name="q4" value="d" id="q4d">Raiders of the Lost Arc
+                        </div>
+                        <br><br><br>
+
+                        <p class="question">The lives of two mob hitmen, a boxer, a gangster's wife, and a pair of diner bandits intertwine in four tales of violence and redemption.</p>
+                        <br>
+                        <div id="buttons">
+                            <input type="radio" name="q5" value="a" id="q5a">The Big Heat
+                            <input type="radio" name="q5" value="b" id="q5b">Pulp Fiction
+                            <input type="radio" name="q5" value="c" id="q5c">The Naked Jungle
+                            <input type="radio" name="q5" value="d" id="q5d">Mullholland Falls
+                        </div>
+                        <br><br><br>
+
+                        <p class="question">A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.</p>
+                        <br>
+                        <div id="buttons">
+                            <input type="radio" name="q6" value="a" id="q6a">Matrix
+                            <input type="radio" name="q6" value="b" id="q6b">Hackers
+                            <input type="radio" name="q6" value="c" id="q6c">War Games
+                            <input type="radio" name="q6" value="d" id="q6d">Trancendence
+                        </div>
+                        <br><br><br>
+
+                        <p class="question">A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a CEO.</p>
+                        <br>
+                        <div id="buttons">
+                            <input type="radio" name="q7" value="a" id="q7a">Dreamscape
+                            <input type="radio" name="q7" value="b" id="q7b">Requiem for a Dream
+                            <input type="radio" name="q7" value="c" id="q7c">Inception
+                            <input type="radio" name="q7" value="d" id="q7d">In Dreams
+                        </div>
+                        <br><br><br>
+
+                        <p class="question">An NYPD officer tries to save his wife and several others taken hostage by German terrorists during a Christmas party at the Nakatomi Plaza in Los Angeles.</p>
+                        <br>
+                        <div id="buttons">
+                            <input type="radio" name="q8" value="a" id="q8a">Die Hard
+                            <input type="radio" name="q8" value="b" id="q8b">Cop Out
+                            <input type="radio" name="q8" value="c" id="q8c">Precious Cargo
+                            <input type="radio" name="q8" value="d" id="q8d">Bandits
+                        </div>
+                        <br><br><br>
+
+                        <p class="question">A man simply known as "the Dude", seeks restitution after his rug is ruined by hired thugs, and enlists his bowling buddies to help get it.</p>
+                        <br>
+                        <div id="buttons">
+                            <input type="radio" name="q9" value="a" id="q9a">Kingpin
+                            <input type="radio" name="q9" value="b" id="q9b">Wag the Dog
+                            <input type="radio" name="q9" value="c" id="q9c">The Big Lebowski
+                            <input type="radio" name="q9" value="d" id="q9d">Barton Fink
+                        </div>
+                        <br><br><br>
+
+                        <p class="question">After escaping an attack by what he claims was a 70-foot shark, Jonas Taylor must confront his fears to save those trapped in a sunken submersible.</p>
+                        <br>
+                        <div id="buttons">
+                            <input type="radio" name="q10" value="a" id="q10a">Jaws
+                            <input type="radio" name="q10" value="b" id="q10b">Open Water
+                            <input type="radio" name="q10" value="c" id="q10c">Deep Blue Sea
+                            <input type="radio" name="q10" value="d" id="q10d">The Meg
+                        </div>
+                        <br><br><br>
+
+                        <div>
+                            <input type="submit" value="Submit Answers" id="submitButton">
+                        </div>
+                        <br>
+
+                    </form>
+
+                    <div id="results"></div>
+                    <div>
+                        <input type="submit" value="Reset" id="resetButton">
+                    </div>
+                </section>
+            </div>
+                
+            <div class="footer">
+                <div id="footerbar"></div>
+                <p id="copy">copywrite &copy; Tim Krone</p>
+            </div>
+
+        </div>
+         <!-- Link to the jQuery Library -->
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>        
+        <!-- Link to the Javascript File -->
+        <script src="assets\javascript\script.js"></script>
+    </body>
+</html>
